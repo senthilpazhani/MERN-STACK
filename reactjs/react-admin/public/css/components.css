@@ -41,7 +41,7 @@
 }
 
 /* Left Side Nav Bar */
-#leftmenubar {height: 100%; width: 160px; position: fixed; z-index: 2;left: 0;    
+#leftmenubar {height: 100%; width: 160px; position: fixed; z-index: 1;left: 0;    
     overflow-x: hidden;}  
 #leftmenubar #leftsidenav {padding-top:20px;height: 100%; }
 #leftmenubar #leftsidenav a {padding: 6px 8px 6px 12px; text-decoration: none; display: block; }   
@@ -55,14 +55,14 @@
 }
 /* Left Side Slide Bar */
 #leftsideslidebar{width:auto;max-width:350px;}
-#leftsideslidebar{padding:10px; z-index: 3;}
+#leftsideslidebar{padding:10px;}
 #leftsideslidebar #leftsideovelay .closebtn, #rightsideslidebar #rightsideovelay .closebtn{
     position: absolute; top: 0; right: 25px; margin-left: 50px;font-size: 20px; cursor:pointer; overflow: hidden; }
 #rightsideslidebar_closebtn{float:right;position: relative;}
-#rightsideslidebar{width:350px;right:0;overflow-x: hidden;z-index: 1;idth: 0;transition: 0.5s;}
+#rightsideslidebar{width:350px;right:0;overflow-x: hidden;z-index: 1;width: 0;transition: 0.5s;}
 #rightsideslidebar #rightsideovelay{ transition: 0.3s;padding:10px;}
-#leftSidenavIcon #leftsideslidebar_closebtn{position: fixed;left: 140px;padding:10px 8px 10px 22px;top: 50%;z-index:1;}
-#rightSidenavIcon #rightsideslidebar_closebtn{position: fixed;right: -20px;padding:10px 22px 10px 8px;top: 50%;z-index:2;}
+#leftSidenavIcon #leftsideslidebar_closebtn{position: fixed;left: 140px;padding:10px 8px 10px 22px;top: 50%;}
+#rightSidenavIcon #rightsideslidebar_closebtn{position: fixed;right: -20px;padding:10px 22px 10px 8px;top: 50%;}
 #rightsideslidebar #rightpanelaccordion, #leftsideslidebar #leftsideovelay{padding-top:20px;} 
 @media screen and (max-width: 600px) {     
     #leftsideslidebar, #rightsideslidebar{max-width:100%;}    
@@ -153,7 +153,7 @@
   }
 
   /* Dashboard */
-  /* #main .filterDiv{display: none;} */
+  #main .filterDiv{display: none;}
 /* Auto Complete */
 /*the container must be positioned relative:*/
   .autocomplete {
@@ -188,13 +188,3 @@
     background-color: DodgerBlue !important; 
     color: #ffffff; 
   }
-
-  
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
